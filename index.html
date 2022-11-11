@@ -27,16 +27,13 @@ function getMobileOperatingSystem() {
 <script>
 function DetectAndServe(){
     let os = getMobileOperatingSystem();
+    let link = "intent://arvr.google.com/scene-viewer/1.1?file=https://rachelforce.github.io/TrainsTest/model.glb&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
     if (os == "Android") {
-        window.location.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"; 
+        window.location.href = link;
     } else if (os == "iOS") {
         window.location.href = "indexios.html";
-    } else if (os == "Windows Phone") {
-        window.location.href = "intent://arvr.google.com/scene-viewer/1.0?file=scene.gltf&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"; 
-   
     } else {
-        window.location.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"; 
-    
+        window.location.href = link;
     }
 }
 </script>
