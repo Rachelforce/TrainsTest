@@ -28,7 +28,7 @@ function getMobileOperatingSystem() {
 function DetectAndServe(){
     let os = getMobileOperatingSystem();
     if (os == "Android") {
-        window.location.href = "intent://arvr.google.com/scene-viewer/1.1?file=scene.gltf&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"; 
+        window.location.href = "intent://arvr.google.com/scene-viewer/1.1?file=model.glb&link=https://vk.com&title=RZD APP#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"; 
     } else if (os == "iOS") {
         window.location.href = "indexios.html";
     } else if (os == "Windows Phone") {
